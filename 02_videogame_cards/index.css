@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(3, 16, 30);
+    font-family:'Montserrat', Times, serif;
+    color: aliceblue;
+}
+
+body h1, p {
+    margin: 0;
+    
+}
+body h1 {
+    margin-top: 2rem ;
+    margin-bottom: 0.5rem;
+    font-size: 40px;
+}
+
+.div_container_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.information_container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin: 2rem 2rem;
+    background: radial-gradient(
+        circle at 50% 80%,  
+        rgba(29, 49, 127, 0.408), 
+        rgba(0, 0, 0, 0) 70%  
+    ),
+    linear-gradient(180deg, #0f1020, #050510);
+
+    border: 0.1px solid rgba(199, 216, 255, 0.144);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(122, 126, 152, 0.25);
+}
+
+.header_cards {
+    width: 100%;
+    margin: 0rem;
+    
+}
+
+.header_cards img {
+    width: 100%;
+    height: 125px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(56, 63, 69);
+    border: none;  
+}
+
+.header_cards dt{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header_cards dd{
+    font-size: 1.17em;
+    font-weight: 500;
+}
+
+.flex_direction_row {
+    box-sizing: border-box;
+    width: 100%;
+    padding:0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_body {
+    box-sizing: border-box;
+    margin: 0rem;
+    width: 100%;
+    padding:0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style: none;
+}
+
+.card_body li {
+    border: 0.1px solid rgba(199, 216, 255, 0.279);
+    border-radius: 15px;
+    padding: 0.75rem 0.75rem;
+    width: auto;
+    margin: 0rem;
+    margin-right: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card_stadisctics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.card_stadisctics dt, dd {
+    margin:0 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card_stadisctics input {
+    box-sizing: border-box; /* Hace que no se cuente el padding ni el borde, pero el margin si*/
+    width: 87%;
+    background: none;
+    border: 1px solid rgba(199, 216, 255, 0.471);
+}

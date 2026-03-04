@@ -1,7 +1,7 @@
 # Newspaper Layout
 
 ## Objetivo
-Crear la maquetación de un periódico sencillo, enfocándose en la organización de la información.
+Practicar la maquetación de un periódico sencillo usando **HTML semántico** y CSS básico, enfocándonos en organizar correctamente la información en secciones, encabezados y artículos.
 
 ## Tecnologías
 - HTML
