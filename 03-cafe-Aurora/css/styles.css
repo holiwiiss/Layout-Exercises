@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --color-bg-principal: #FEFAF6;
+    --color-dark-green: #2D5A27;
+    --color-white: #ffffff;
+    --color-grey: #666666;
+    --color-black: #1a1a1a;
+    --color-red: #DC3545;
+    --color-brown: #D4A574;
+    --color-ligth-green: #28A745;
+    --menu-height: 72px;
+    --menu-bottom-height: 57px;
+}
+
+body {
+    background-color: var( --color-bg-principal);
+    margin: 0 0;
+    padding: 0 0;
+    font-family: "Playfair Display", serif;
+}
+
+button, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: 400;
+}
+button, p, label, input, span, textarea{
+    font-size: 16px;
+    font-family:"Inter", sans-serif;
+}

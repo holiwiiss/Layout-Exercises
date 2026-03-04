@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Product - Cafe Aurora</title>
+</head>
+<body>
+    <nav class="topbar">
+        <img src="images/back_icon.png" alt="go-to-back" class="topbar__icon">
+        <p>Detalle</p>
+        <img src="images/like_icon.png" alt="like-product" class="topbar__icon">
+    </nav>
+
+    <main>
+        <div class="product-img__container">
+            <img src="images/espresso_intenso_img.png" alt="product-img" class="product-img">
+        </div>
+
+        <section class="product-information">
+            <header class="product-resume">
+                <h1> Espresso Intenso</h1>
+                <div class="product-score__container">
+                    <img src="images/estrella_rellena_icon.png" alt="estrella">
+                    <img src="images/estrella_rellena_icon.png" alt="estrella">
+                    <img src="images/estrella_rellena_icon.png" alt="estrella">
+                    <img src="images/estrella_rellena_icon.png" alt="estrella">
+                    <img src="images/estrella_rellenant_icon.png" alt="estrella">
+                    <p>(4,8)</p>
+                </div>
+                <h2>€3.50</h2>
+                <p>
+                    Nuestro espresso signature combina granos 100% arábica de origen único de las montañas de Colombia. 
+                    Tostado artesanalmente para resaltar sus notas de chocolate negro, caramelo y un toque cítrico que perdura en el paladar.
+                </p>
+            </header>
+
+            <!-- ESTO DEBERÍA SER OTRO LI -->
+            
+            <article class="ingredients-information__container">
+                <h3>Ingredientes y Origenes</h3>
+                <div class="ingredients__container" category="bg-white">
+                    <img src="images/correct_icon.png" alt="cotains_icon">
+                    <p>Café arábica de Colombia</p>
+                </div>
+                <div class="ingredients__container">
+                    <img src="images/correct_icon.png" alt="cotains_icon">
+                    <p>Tostado medio-oscuro</p>
+                </div>
+                <div class="ingredients__container" category="bg-white">
+                    <img src="images/correct_icon.png" alt="cotains_icon">
+                    <p>Proceso lavado</p>
+                </div>
+                <div class="ingredients__container">
+                    <img src="images/correct_icon.png" alt="cotains_icon">
+                    <p>Certificación orgánica</p>
+                </div>
+
+                
+                <div class="add-more-products__container">
+                    <button category="negative-action">-</button>
+                    <p>1</p>
+                    <button category="positive-action">+</button>
+                </div>
+
+                <button class="btn-add-card" category="positive-action">Añadir al carrito - €3.50</button>
+            </article>
+
+        </section>
+    </main>
+    
+</body>
+</html>

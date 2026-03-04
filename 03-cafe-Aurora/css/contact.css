@@ -1,0 +1,138 @@
+.contact-info__container {
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.contact-info__container > p:first-of-type {
+    color: var(--color-grey);
+    margin-top: 1rem;
+}
+
+form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--color-black);
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+[category="obligatory"]::after {
+    content: '*';
+    color: var(--color-red);
+    position: absolute;
+    inset:50% auto 0 auto;
+    transform: translateY(-50%);
+    
+    line-height: 100%;
+}
+
+input {
+    height: 52px;
+    margin-bottom: 1.5rem;
+    padding: 0 16px; 
+}
+.input-style {
+    border: 2px solid rgba(000,000,000, 0.1);
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+input:focus {
+    border: 2px solid var( --color-dark-green);
+}
+
+.error-form {
+    margin-top: -1rem;
+    font-size: 14px;
+    color: var(--color-red);
+    margin-bottom: 1.5rem;
+}
+.error-input {
+    border-color: var(--color-red);
+}
+
+.hidden {
+    display:none;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    height: 172px;
+    width: 100%;
+}
+.container__min-words {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.container__min-words p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-grey);
+}
+.checkbox__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 3rem;
+}
+
+.checkbox__container label {
+    margin:0
+}
+
+[type="checkbox"] {
+    margin: 0;
+    margin-right: 0.5rem;
+    height: 24px;
+    width: 24px;
+}
+u{
+    color: var(--color-dark-green);
+}
+
+[type="submit"] {
+    border-radius: 24px;
+    background-color: var(--color-grey);
+    opacity: 50%;
+    border: none;
+    color: var(--color-white);
+    padding: 0;
+}
+
+.after-info__container {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.after-info__container h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.steps__container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.steps__container img {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+.steps__container p {
+    width: auto;
+}
