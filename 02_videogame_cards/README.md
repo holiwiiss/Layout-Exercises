@@ -1,4 +1,4 @@
-# Newspaper Layout
+# Videogame Cards
 
 ## Objetivo
 Crear la maquetación de cartas de estadísticas para un videojuego usando HTML semántico y CSS básico, practicando la correcta estructuración de contenido y la separación de estilos.
