@@ -27,7 +27,7 @@ Este ejercicio consolida:
 - Adaptabilidad del diseño a distintos dispositivos.
 
 ## Cómo ver
-Abrir `index.html` en el navegador.
+Abrir `index.html` en el navegador y redimensionar la ventana para comprobar el comportamiento responsive.
 
 ## Capturas
 ![Preview](preview_Desktop.png)

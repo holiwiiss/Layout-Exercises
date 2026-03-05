@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*  =================================
+    BASE: Móvil (todo apilado)
+    =================================*/
+
+:root {
+    --col:8.33333%;
+    --marginCard:  0.2rem; /* 1 rem de cada lado */
+    --col-1: calc(var(--col) - var(--marginCard));
+    --col-2: calc(var(--col)*2 - var(--marginCard));
+    --col-3: calc(25% - var(--marginCard));
+    --col-4: calc(var(--col)*4 - var(--marginCard));
+    --col-5: calc(var(--col)*5 - var(--marginCard));
+    --col-6: calc(50% - var(--marginCard));
+    --col-7: calc(var(--col)*7 - var(--marginCard));
+    --col-8: calc(var(--col)*8 - var(--marginCard));
+    --col-9: calc(var(--col)*9 - var(--marginCard));
+    --col-10: calc(var(--col)*10 - var(--marginCard));
+    --col-11: calc(var(--col)*11 - var(--marginCard));
+    --col-12: calc(100% - var(--marginCard));
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 113, 149);
+    font-family: "Playfair Display", serif;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 { width: var(--col-12); }
+.col-6 { width: var(--col-6); }
+.col-4 { width: var(--col-4); }
+.col-3 { width: var(--col-3); }
+.col-2 { width: var(--col-2); }
+.col-1 { width: var(--col-1); }
+
+/*  =================================
+    TABLET: 768px en adelante
+    =================================*/
+
+@media (width >768px) {
+    .col-md-12 { width: var(--col-12); }
+    .col-md-6 { width: var(--col-6); }
+    .col-md-4 { width: var(--col-4); }
+    .col-md-3 { width: var(--col-3); }
+    .col-md-2 { width: var(--col-2); }
+    .col-md-1 { width: var(--col-1); }
+}
+
+/*  =================================
+    DESKTOP: 1024px en adelante
+    =================================*/
+
+@media ( width > 1024px) {
+    .col-lg-12 { width: var(--col-12); }
+    .col-lg-6 { width: var(--col-6); }
+    .col-lg-4 { width: var(--col-4); }
+    .col-lg-3 { width: var(--col-3); }
+    .col-lg-2 { width: var(--col-2); }
+    .col-lg-1 { width: var(--col-1); }
+}
+
+
+/*  =================================
+    CLASES CALCULADORA
+    =================================*/
+
+.calculadora{
+    width: 60%;
+    max-width: 600px;
+    background-color: rgb(243, 218, 231);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.calculadora__display {
+    background-color: rgb(212, 147, 181);
+    height: 50px;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+    padding: 0 1rem;
+    box-shadow: inset 1px 1px 5px #000000;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.calculadora__btn {
+    background-color: rgba(214, 177, 196, 0.329);
+    border-radius: 8px;
+    height: 50px;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 5px #00000056;
+    margin: 0.1rem;
+}
+
+.calculadora__btn:hover {
+    cursor: pointer;
+}
+
+.calculadora__btn--delete {
+    background-color: rgb(231, 174, 94);
+}
+
+.calculadora__btn--operation {
+    background-color: rgb(214, 177, 196);
+}
+
+.calculadora__btn--equal {
+    background-color: rgb(122, 184, 101);
+}
