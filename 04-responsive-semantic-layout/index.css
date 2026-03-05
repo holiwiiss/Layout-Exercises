@@ -1,0 +1,131 @@
+:root {
+ /* em es el tamaño del padre, si no pues 16px */
+
+  /* COLORES */
+
+    --dark-grey-color: #333;
+    --clair-grey-color: #999;
+    --white-color: #fff;
+    --black-color: #000;
+
+  /* TAMAÑOS */
+
+    --space-19px: 19.2px;
+    --space-9px: 9.6px;
+    --space-24: 24px;
+    --space-1-rem: 1rem;
+
+    --padding: var(--space-9px) var(--space-19px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: var(--space-19px)/1.4 Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 0 var(--space-19px);
+}
+
+.topbar {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    border: 5px solid var(--black-color);
+}
+
+.topbar__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+    padding: var(--padding);
+    border-top: 1px solid var(--clair-grey-color);
+}
+
+.topbar__title {
+    font-size: var(--space-24);
+    font-style: italic;
+    font-weight: bold;
+    padding: var(--space-24);
+}
+
+.allcards__container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card__container {
+    border: 5px solid var(--black-color);
+    margin-bottom: var(--space-19px);
+}
+
+.card__title {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    margin: 0;
+    padding: var(--padding);
+}
+
+.card__inner {
+    padding: var(--padding);
+}
+
+.sidebar {
+    background-color: var(--dark-grey-color);
+    border: 5px solid var(--black-color);
+    padding: var(--padding);
+    color: var(--white-color);
+}
+
+@media (width > 1024px) {
+    .topbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topbar__menu{
+        display: flex;
+    }
+    .menu__item{
+        border: none;
+    }
+
+    .master-container{
+        padding: var( --space-1-rem);
+        width: 75%;
+        height: 100vh;
+    }
+
+    .allcards__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+
+    .card__container {
+        flex:0 0 calc(33% - 20px);
+    }
+
+    .sidebar {
+        width: 25%;
+        height: 100vh;
+        margin-top:var( --space-1-rem);
+    }
+
+    .content__sidebar {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
