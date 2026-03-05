@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*  =================================
+    BASE: Móvil (todo apilado)
+    =================================*/
+
+:root {
+    --col:8.33333%;
+    --marginCard: 2rem; /* 1 rem de cada lado */
+    --col-1: calc(var(--col) - var(--marginCard));
+    --col-2: calc(var(--col)*2 - var(--marginCard));
+    --col-3: calc(25% - var(--marginCard));
+    --col-4: calc(var(--col)*4 - var(--marginCard));
+    --col-5: calc(var(--col)*5 - var(--marginCard));
+    --col-6: calc(50% - var(--marginCard));
+    --col-7: calc(var(--col)*7 - var(--marginCard));
+    --col-8: calc(var(--col)*8 - var(--marginCard));
+    --col-9: calc(var(--col)*9 - var(--marginCard));
+    --col-10: calc(var(--col)*10 - var(--marginCard));
+    --col-11: calc(var(--col)*11 - var(--marginCard));
+    --col-12: calc(100% - var(--marginCard));
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 113, 149);
+    font-family: "Playfair Display", serif;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 { width: var(--col-12); }
+.col-6 { width: var(--col-6); }
+.col-4 { width: var(--col-4); }
+.col-3 { width: var(--col-3); }
+.col-2 { width: var(--col-2); }
+.col-1 { width: var(--col-1); }
+
+/*  =================================
+    TABLET: 768px en adelante
+    =================================*/
+
+@media (width >768px) {
+    .col-md-12 { width: var(--col-12); }
+    .col-md-6 { width: var(--col-6); }
+    .col-md-4 { width: var(--col-4); }
+    .col-md-3 { width: var(--col-3); }
+    .col-md-2 { width: var(--col-2); }
+    .col-md-1 { width: var(--col-1); }
+}
+
+/*  =================================
+    DESKTOP: 1024px en adelante
+    =================================*/
+
+@media ( width > 1024px) {
+    .col-lg-12 { width: var(--col-12); }
+    .col-lg-6 { width: var(--col-6); }
+    .col-lg-4 { width: var(--col-4); }
+    .col-lg-3 { width: var(--col-3); }
+    .col-lg-2 { width: var(--col-2); }
+    .col-lg-1 { width: var(--col-1); }
+}
+
+/*  =================================
+    CLASES PERRICOS
+    =================================*/
+
+.perricos__card {
+    background-color: #ededed;
+    border-radius: 16px;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.perricos__card--img {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 8px;
+    height: 200px;
+}
+
+.perricos__card--name {
+    margin-top: 3rem ;
+}
+
+.perricos__card--breed {
+    border: 1px solid #0000008f;
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.perricos__card--description {
+    margin: 2rem 0;
+}
