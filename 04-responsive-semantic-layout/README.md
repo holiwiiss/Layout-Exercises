@@ -6,29 +6,26 @@ Desarrollar una página web con especial atención a la **semántica HTML**, el 
 ## Tecnologías
 - HTML5
 - CSS3
-- Media Queries para diseño responsive
-- Variables CSS definidas en `:root`
+- Flexbox
+- Media Queries
+- CSS Custom Properties (`:root`)
 
 ## Detalles técnicos
 - Estructura HTML clara y accesible.
-- Diseño completamente **responsive**, adaptado a diferentes tamaños de pantalla.
-- Uso de **CSS Custom Properties (`:root`)** para:
-  - Tamaños de fuente
-  - Colores
-  - Espaciados
-  - Variables reutilizables para mantener consistencia visual
-- Separación clara entre estructura (HTML) y presentación (CSS).
-- Código organizado y mantenible.
+- Diseño completamente responsive,
+- Uso de CSS Custom Properties (`:root`) para colores, tamaños y espaciados
+- Separación clara entre estructura y presentación.
+- Código organizado y mantenible
+- Variables y nomenclatura **BEM** para organizar clases de forma consistente
 
 ## Enfoque de aprendizaje
-Este ejercicio consolida:
 - Buenas prácticas de semántica.
 - Escalabilidad y mantenimiento del CSS mediante variables globales.
 - Adaptabilidad del diseño a distintos dispositivos.
 
 ## Cómo ver
-Abrir `index.html` en el navegador y redimensionar la ventana para comprobar el comportamiento responsive.
+Abrir `index.html` en el navegador y redimensionar la ventana.
 
 ## Capturas
-![Preview](preview_Desktop.png)
-![Preview](preview_Movil.png)
+![Preview Desktop](preview_Desktop.png)
+![Preview Móvil](preview_Movil.png)
