@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.bg-image {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(background_desktop.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (width < 768px) {
+    .bg-image {
+        background-image: url(background_movil.jpg);
+    }
+}
+

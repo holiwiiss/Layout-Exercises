@@ -9,5 +9,6 @@ Repositorio con ejercicios de maquetación HTML y CSS realizados como prácticas
 4. `04-responsive-semantic-layout` – Maquetación de un sitio web responsive con semántica HTML y uso de variables CSS (BEM incluido)
 5. `05-responsive-calculator` – Maquetación de una calculadora responsive (sin JavaScript, BEM y variables CSS)
 6. `06-responsive-dog-cards-grid` – Página de cards responsive (sin JavaScrip, BEM y variables CSS)
+7. `07-responsive-background-images` – Cambio de imagen de fondo según tamaño de pantalla
 
 Cada carpeta incluye su propio README con más detalles sobre el ejercicio, tecnologías utilizadas, y cómo ver el proyecto.
