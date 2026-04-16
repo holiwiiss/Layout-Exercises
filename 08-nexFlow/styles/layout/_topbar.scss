@@ -1,0 +1,19 @@
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 2rem;
+    height: 72px;
+
+    &__logo {
+        margin-right: 2rem;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1rem;
+    }
+}
